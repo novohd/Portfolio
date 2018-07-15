@@ -1,0 +1,271 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*this needs to be un commented to fill whole page on website*/
+
+ html, body {
+  height: 100%;
+}
+
+/*----------------------------------------
+heading
+------------------------------------------*/
+
+header {
+	background-color: #629DB4;
+	float: left;
+	margin: 0 0 1em 0;
+	padding: 5px 0 0 0;
+	width: 100%;
+}
+
+/*moves name to left and gets rid od underline*/
+#logo {
+	color: #F7F9FB;
+	text-align: left;
+	margin: 0;
+	text-decoration: none;
+}
+
+header a h1 {
+	margin: 15px 0;
+	font-size: 1.75em;
+	font-weight: normal;
+	line-height: 0.8em;
+}
+
+header a h2 {
+	font-size: 0.75em;
+	margin: -5px 0 0;
+	font-weight: normal;
+}
+
+header h1, h2{
+	text-align: center;
+}
+
+/*----------------------------------------
+Navagation bar
+------------------------------------------*/
+
+nav {
+	text-align: center;
+}
+
+nav ul {
+	list-style: none;
+}
+
+nav li {
+	padding: 0.75em 3em 0 0;
+}
+
+
+/*makes the nav words thicker and gets ride of the underline and color of words*/
+nav a{
+	color: #F7F9FB;
+	font-weight: 800;
+	text-decoration: none;
+}
+
+/*----------------------------------------
+FOOTER
+------------------------------------------*/
+
+footer {
+	text-align: center;
+	clear: both;
+	padding-top: 50px;
+}
+
+.social-icon {
+	width: 20px;
+	height: 20px;
+	margin: 0 5px;
+}
+
+/*----------------------------------------
+			MAIN IMAGE
+------------------------------------------*/
+/*This makes sure the images stays in the frame*/
+img {
+	max-width: 100%;
+}
+
+.roadMount {
+	padding: 0;
+	margin-top: -1.75em;
+  	height:110%;
+ 	 background-size: cover;
+}
+
+/*Height of the mainn image*/
+.container img {
+	height: 40em;
+}
+
+/*the container for the image*/
+.container {
+	position: relative;
+}
+
+/*images text position*/
+.picText {
+	position: absolute;
+	left:0;
+	text-align: center;
+	width: 100%;
+	top: 20em;
+}
+
+/*----------------------------------------
+ABOUT
+------------------------------------------*/
+#about {
+	margin-top: -1.6em;
+}
+
+
+#about h1{
+  text-align:center;
+}
+
+#about p{
+  padding: 0 4em;
+}
+
+/*centers my skills text*/
+.skills p{
+  	text-align: center;
+}
+
+.aboutpara {
+	background-color: #E6E6E6;
+	max-height: 80em;
+	padding-top: 3em;
+	margin-bottom: 3em;
+}
+
+/*creates container for logo and adds the space at the bottom of the logos*/
+.logoContainer{
+		height: 300px;
+	}
+
+/* this changes the sizes and spacing of the logos for phones */
+.skillLogo img{
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+	height: 4em;
+	padding-left: 2em;
+}
+
+/*----------------------------------------
+Portfolio
+------------------------------------------*/
+
+/*changes background color and alaigns the portfolio to the skills*/
+#portfolio{
+	/*background-color: #31708E;*/
+	margin-top: -2em;
+}
+
+.portImg img {
+	height: 13em;
+}
+
+
+/*---------Responsive design for Tablets---------*/
+
+
+/*---------Responsive design for Tablets---------*/
+
+@media (min-width: 480px){
+	
+	#about p{
+	  padding: 0 8em;
+	}
+	
+	/*creates container for logo and adds the space at the bottom of the logos*/
+	.logoContainer{
+		width: 725px;
+		height: 200px;
+	}
+	
+	.logoContainer{
+		display: table-cell;
+		text-align: center;
+		vertical-align: middle;
+	}
+	
+	/*this makes the logos side by side and ajusts there sizes*/
+	.skillLogo img {
+		display:inline-block;
+		height: 6em;
+		width: 5.5em;
+	}
+
+}
+
+
+/*---------Responsive design for Desktops---------*/
+@media (min-width: 725px){
+	
+/*----------------------------------------
+Header
+------------------------------------------*/
+	nav {
+		background: none;
+		float: right;
+		text-align: right;
+		margin-right: 5%;
+		width: 45%;
+   		margin-bottom: 2em;
+	}
+	
+	.nav-list{
+		padding: 0;
+	}
+	
+	.nav-list li:last-child{
+		margin-right: -4em;
+	}
+	
+	#logo {
+		float: left;
+		margin-left: .5em;
+	}
+	
+	.roadMount {
+		min-width: 725px;
+	}
+	
+	li {
+    display:inline; 
+  }
+
+
+/*----------------------------------------------
+ABOUT	
+	
+-------------------------------------------------*/	
+	
+	.skillLogo img {
+		height: 8em;
+		width: 6em;
+	}
+	
+		/*creates container for logo and adds the space at the bottom of the logos*/
+	.logoContainer{
+		width: 1350px;
+		height: 300px;
+	}
+	
+/*makes the card for the about section*/	
+	#center {
+    margin: auto;
+    width: 70%;
+}
+
+	
+}

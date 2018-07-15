@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+@media (min-width: 480px){
+	
+/*----------------------------------------
+Two column layout
+------------------------------------------*/
+	#primary {
+		width: 50%;
+		float: left;
+	}
+	
+	#secondary {
+		width: 40%; 
+		float: right;
+	}
+	
+/*----------------------------------------
+PAGE : portfolio
+------------------------------------------*/
+	#gallery li a {
+		width: 28.33333333%;
+	}
+	
+	#gallery li a:nth-child(4n) {
+		clear: left;
+	}
+	
+/*----------------------------------------
+PAGE : About
+------------------------------------------*/
+
+	.profile-photo {
+		float: left;
+		margin: 0 5% 80px 0;
+	}
+	
+	.about{
+	font-size: 1.5em;
+	padding: 0;
+	text-align: left;
+}
+	
+}
+
+
+
+
+@media (min-width: 725px){
+
+/*----------------------------------------
+Header
+------------------------------------------*/
+	
+	nav {
+		background: none;
+		float: right;
+		font-size: 1.25em;
+		margin-right: 5%;
+		text-align: right;
+		width: 45%;
+	}
+	
+	#logo {
+		float: left;
+		margin-left: 5%;
+		text-align: left;
+		width: 45%;
+	}
+	
+	h1 {
+		font-size: 2.5em;
+	}
+	
+	h2 {
+		font-size: 0.825em;
+		margin-bottom: 20px;
+	}
+	
+	header {
+		border-bottom: 5px solid #0284A8;
+		margin-bottom: 60px;
+	}
+	
+
+/*----------------------------------------
+PAGE: ABOUT----Toolbox
+------------------------------------------*/
+	
+	
+	/*This is the bigger picture for desktops*/
+	.toolbox {
+		background-image: url(../img/toolbox2.2.png);
+		height: 500px;
+	}
+	
+	/*aligns the header for toolbox and makes the size*/
+	.headerToolbox {
+		font-size: 2em;
+		padding-top: 1.25em;
+	}
+	
+}
+
+@media (min-width: 975px){
+	
+	/*fixes the headertoolbox's alighnment in bigger screens*/
+	.headerToolbox{
+		padding-right: 6em;	
+	}
+}
